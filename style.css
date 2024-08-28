@@ -10,6 +10,12 @@
     --black: #00000090;
     --blueb: #22224a;
     --blueo: #3232e2;
+    --yellow: #ffcc29;
+    --blackg: #1d1c1c;
+    --gray: #e9dede85;
+    --red: #ff0000;
+    --blackh: #000000b6;
+                
 }
 
 body, html {
@@ -43,31 +49,46 @@ header {
 }
 
 .link a{
+    font-size: 13px;
     color: var(--white);
     text-decoration: none;
+    transition: 00.80s ease;
+}
+
+.link a:hover{
+    color: var(--blueo);
 }
 
 .home {
-    padding: 200px;
+    padding: 210px;
     background: linear-gradient(180deg, var(--bluew) 9%, var(--blues) 100%);
 }
 
 .text {
+    margin-left: 25px;
     width: 1000px;
     font-size: 28px;
 }
 
 .text h1{
-    font-size: 55px;
+    color: var(--blackh);
+    font-size: 50px;
+}
+
+.text p{
+    font-size: 40px;
+
 }
 
 .home button {
+    margin-left: 25px;
     margin-top: 20px;
     border-radius: 50px;
-    padding: 30px 70px;
+    padding: 23px 80px;
     border-color: var(--green);
     transition: 00.5s ease;
     cursor: pointer;
+    color: var(--greenw);
 }
 
 .home button:hover {
@@ -163,19 +184,71 @@ header {
 }
 
 .container-bank {
-    padding: 100px;
-    background-image: url(images/img\ cofre\ fundo.jpg);
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(images/img\ cofre\ fundo.jpg);
+    padding: 10%;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    background-attachment: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-
-    background: linear-gradient(180deg,var(--blueo) 8.33%, var(--blue)100%);
 }
 
 .image-bank img {
-    width: 300px;
+    width: 25vw;
+}
+
+.text-bank {
+    color: var(--white);
+    width: 375px;
+}
+
+.text-bank h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.text-bank span {
+    color: var(--yellow);
+}
+
+.text-bank p {
+    font-size: 16px;
+    margin-top: 1.5rem;
+    text-align: center;
+
+}
+
+.final-section {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--blackg);
+}
+
+.final img {
+    margin-top: 1.5rem;
+    width: 15vw;
+    height: 4rem;
+}
+
+.final-container {
+    background-color: var(--blackg);
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.final-footer p {
+    text-align: center;
+    color: var(--gray);
+}
+
+.link-footer a {
+    text-decoration: none;
+    color: var(--white);
+    transition: 00.80s ease;
+}
+
+.link-footer a:hover {
+    color: var(--red);
 }
