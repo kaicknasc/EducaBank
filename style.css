@@ -1,0 +1,181 @@
+:root {
+    --blue: #4e87a8;
+    --white: #fff;
+    --green: #13996c;
+    --greenw: #13996c;
+    --bluew: #c0cdcf;
+    --blues: #5aa8a8;
+    --whitet:  #e2e9e9;
+    --bluess: #5aa8a8;
+    --black: #00000090;
+    --blueb: #22224a;
+    --blueo: #3232e2;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.link {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.link a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.home {
+    padding: 200px;
+    background: linear-gradient(180deg, var(--bluew) 9%, var(--blues) 100%);
+}
+
+.text {
+    width: 1000px;
+    font-size: 28px;
+}
+
+.text h1{
+    font-size: 55px;
+}
+
+.home button {
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 30px 70px;
+    border-color: var(--green);
+    transition: 00.5s ease;
+    cursor: pointer;
+}
+
+.home button:hover {
+    border-color: var(--white);
+    color: var(--white);
+    background-color: var(--green);
+    transform: scale(1.1);
+}
+
+.app {
+    padding: 100px;
+    background-color: var(--whitet);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app p {
+    width: 480px;
+    font-size: 42px;
+}
+
+.app button {
+    margin: 30px 30px;
+    border-radius: 50px;
+    padding: 20px 50px;
+    border-color: var(--green);
+    transition: 00.5s ease;
+    cursor: pointer;
+}
+
+.app button:hover {
+    border-color: var(--white);
+    color: var(--white);
+    background-color: var(--bluess);
+    transform: scale(1.1)
+}
+
+.image img {
+    width: 450px;
+}
+
+.info {
+    padding: 100px;
+    background-color: var(--whitet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2 {
+    color: var(--blueb);
+    font-size: 40px;
+}
+
+.text-p {
+    margin-top: 2rem;
+    width: 1000px;
+}
+
+.text-p p {
+    line-height: 25px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.info hr {
+    margin-top: 1.5rem;
+}
+
+.info img {
+    width: 600px;
+    margin-top: 2rem;
+}
+
+.text-p button {
+    transition: 00.5s ease;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 48px;
+    padding: 20px 65px;
+    color: var(--blueo);
+    border-radius: 50px;
+    border-color: var(--blueo);
+}
+
+.text-p button:hover {
+    background-color: var(--blueo);
+    color: var(--white);
+    border-color: var(--whitet);
+    transform: scale(1.1);
+}
+
+.container-bank {
+    padding: 100px;
+    background-image: url(images/img\ cofre\ fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: linear-gradient(180deg,var(--blueo) 8.33%, var(--blue)100%);
+}
+
+.image-bank img {
+    width: 300px;
+}
